@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Masters Task 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- // bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <div class="container">
+      <div class="LogoHeader">
+        <div class="Logo">
+          <img
+            src="./img/logo.png"
+            alt="logo"
+            width="{100}"
+            height="{80}"
+            class="img-fluid"
+          />
+          <span class="mx-2">ASR Store</span>
+        </div>
+
+        <form class="form">
+          <input
+            type="text"
+            class="form-control formInput"
+            placeholder="Are you looking for a specific product?"
+          />
+          <div class="searchBtn">Search</div>
+        </form>
+        <a href="#cartitems" class="cart">
+          <i class="bi bi-cart4"></i>
+        </a>
+      </div>
+    </div>
+    <div class="NavbarContainer">
+      <nav collapseOnSelect class="navbar navbar-expand-lg NavbarStyles">
+        <a class="navbar-brand" href="#">ASR Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <nav class="me-auto">
+            <a class="Link" href="#"> Home </a>
+            <a class="Link" href="#"> About Us </a>
+            <a class="Link" href="#"> Categories </a>
+            <a class="Link" href="#"> Contact Us </a>
+          </nav>
+          <nav class="loginbtns">
+            <a class="LinkNoMargin" href="./login.html"> Login </a>
+            <a class="LinkNoMargin" to="register"> Register </a>
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="container">
+        <Row class="row">
+          <div class="col-md-6 InfoCard">
+            <div class="topHead">YOU CAN NOT MISS IT</div>
+            <div class="MainHead">Black Friday</div>
+            <div class="BtmHead">UP TO 50% OFF</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates repellendus minus alias, dolore pariatur sunt deserunt
+            </div>
+            <div class="btns d-flex">
+              <div class="read">
+                <span>Read More </span>
+              </div>
+              <div class="start">
+                <span>Start Shopping</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ImageCard">
+            <div class="img1">
+              <img src="./img/home_01.png" alt="home_01" class="img-fluid" />
+            </div>
+            <div class="img2">
+              <img src="./img/home_02.png" alt="home_02" class="img-fluid" />
+            </div>
+          </div>
+        </Row>
+      </div>
+    </div>
+    <!-- Products Section Start -->
+    <div class="Products">
+      <div class="container">
+        <div class="topMemu">
+          <div class="head">Shop Our Products</div>
+          <form class="form">
+            <input
+              type="text"
+              class="formInput form-control"
+              placeholder="Are you looking for a specific product?"
+            />
+            <div class="searchBtn">Search</div>
+          </form>
+        </div>
+        <div class="row ProdcutItem"></div>
+      </div>
+
+      <a href="#cartitems" class="cartComponent">
+        <span class="cart-length">0</span>
+        <i class="bi bi-basket2"></i>
+      </a>
+    </div>
+    <div class="cartSection">
+      <div class="container">
+        <div class="head">Shopping Cart</div>
+        <div class="row">
+          <div class="col-md-8 row">
+            <div class="col-md-2 BillHeader headers">Product Image</div>
+            <div class="col-md-2 BillHeader headers">Product Name</div>
+            <div class="col-md-2 BillHeader headers">Quantity</div>
+            <div class="col-md-2 BillHeader headers">Price</div>
+            <div class="col-md-2 BillHeader headers">Delete</div>
+            <div class="cartitems" id="cartitems"></div>
+          </div>
+          <div class="col-md-4 Bill">
+            <form>
+              <input
+                class="formcontrol form-control"
+                type="text"
+                placeholder="Coupon Code"
+              />
+              <button class="btn">Confirm</button>
+            </form>
+            <div class="d-flex justify-content-between mt-4">
+              <div class="">Product Name</div>
+              <div class="">Price</div>
+            </div>
+            <hr />
+            <div class="bill-details"></div>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <div class="">discount</div>
+              <div class="">0$</div>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <div class="">Total Price</div>
+              <div class="totalPrice"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Section End -->
+
+    <script src="./script/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
