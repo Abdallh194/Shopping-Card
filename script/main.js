@@ -949,14 +949,12 @@ function RenderCartItem() {
   CartList.addEventListener("click", (event) => {
     if (event.target.classList.contains("dlt-btn")) {
       // remove task from localStorage
-      if (confirm("Are you sure you want to delete this Item?")) {
-        HandleDeleteTask(
-          event.target.parentElement.parentElement.getAttribute(
-            "data-product-id"
-          )
-        );
-        event.target.parentElement.parentElement.remove();
-      }
+
+      HandleDeleteTask(
+        event.target.parentElement.parentElement.getAttribute("data-product-id")
+      );
+      event.target.parentElement.parentElement.remove();
+
       RenderCartItemToBill();
       CartLength.innerHTML = cartItems.length;
     }

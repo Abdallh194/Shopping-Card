@@ -127,6 +127,9 @@ body {
   .NavbarContainer .navbar-brand {
     display: block;
   }
+  .NavbarContainer .LinkNoMargin {
+    margin-left: 0;
+  }
 }
 
 .header {
